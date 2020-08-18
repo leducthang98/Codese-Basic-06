@@ -44,15 +44,15 @@ public class BookManagement { // DAO : Data Access Object
                 isBookExist = true;
             }
         }
-        if (isBookExist) {
+        if (isBookExist) { //co ton tai sach co ten la nameBook
             boolean response = library.remove(book);
             if (response) {
-                return 1;
+                return 1; // ton tai sach, xoá thanh cong
             } else {
-                return -1;
+                return -1; // ton tai sach, xoa that
             }
         } else {
-            return 0;
+            return 0; // khong ton tai sach
         }
     }
 
